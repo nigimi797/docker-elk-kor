@@ -16,4 +16,4 @@ RUN elasticsearch-plugin install mapper-size
 # 필드 값에 대한 해시를 생성
 RUN elasticsearch-plugin install mapper-murmur3
 # Elasticsearch 클러스터에 대한 AWS EC2 기반 발견에 도움
-RUN elasticsearch-plugin install discovery-ec2
+RUN echo "y" | elasticsearch-plugin install discovery-ec2
