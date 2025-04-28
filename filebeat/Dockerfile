@@ -7,4 +7,6 @@ USER root
 
 RUN mkdir /var/logs
 
+RUN chmod go-w /usr/share/filebeat/filebeat.yml
+
 RUN chown -R root /usr/share/filebeat
